@@ -3,61 +3,61 @@
 %在sicnuthesis模板中下面都相当于在定义学校那个丑爆的封面
 
 \title{题目}
-\author{}
-\school{}
-\major{}
-\class{}
-\studentid{}
-\tutor{}
-\date{}
+\author{长者}
+\school{电机系}
+\major{长寿学}
+\class{1926级8班}
+\studentid{19890604}
+\tutor{人生经验丰富的蟾蜍}
+\date{1926年8月}
 
 \begin{document}
+
+\frontmatter %页码设为罗马数字
 
 \maketitle
 
 \newpage
 
-\begin{abstract}
+\begin{abstractch}
+    摘要是对论文内容不加注释和评论的简短陈述，要求扼要说明研究工作的目的、主要内容、研究结果、结论、
+    科学意义或应用价值等，是一篇具有独立性和完整性的短文。摘要中不宜使用公式、
+    图表以及非公知公用的符号和术语，不标注引用文献编号。
 
+    摘要内容应在200～400字左右，用宋体小四号字书写。摘要内容后空两行书写“关键词”。
+    毕业论文、毕业设计行与行之间、段落和层次标题以及各段落之间均为1.5倍行距。
+\end{abstractch}
 
-摘要是对论文内容不加注释和评论的简短陈述，要求扼要说明研究工作的目的、主要内容、研究结果、结论、
-科学意义或应用价值等，是一篇具有独立性和完整性的短文。摘要中不宜使用公式、
-图表以及非公知公用的符号和术语，不标注引用文献编号。
+\vspace{1cm}
 
-摘要内容应在200～400字左右，用宋体小四号字书写。摘要内容后空两行书写“关键词”。
-毕业论文、毕业设计行与行之间、段落和层次标题以及各段落之间均为1.5倍行距。
+\begin{keywordsch}
+    关键词1；关键词2；关键词3（关键词是供检索使用的，主题词条应为通用技术词汇，
+    不得自造关键词。关键词一般为3～8个，宋体小四号字书写，按词条的学科目录分类顺序，
+    由高至低顺序排列。毕业论文、毕业设计行与行之间、段落和层次标题以及各段落之间均为1.5倍行距。
+    关键词与关键词之间用“；”隔开）
 
-\centering{关键词}
-
-关键词1；关键词2；关键词3（关键词是供检索使用的，主题词条应为通用技术词汇，
-不得自造关键词。关键词一般为3～8个，宋体小四号字书写，按词条的学科目录分类顺序，
-由高至低顺序排列。毕业论文、毕业设计行与行之间、段落和层次标题以及各段落之间均为1.5倍行距。
-关键词与关键词之间用“；”隔开）
-
-（备注：毕业论文、毕业设计摘要与关键词采用英、中两种语言书写，英文在前，中文在后）
-
-\end{abstract}
+    （备注：毕业论文、毕业设计摘要与关键词采用英、中两种语言书写，英文在前，中文在后）
+\end{keywordsch}
 
 \newpage
 
-\renewcommand{\abstractname}{abstract} % 这里其实只是换掉了abstract的那个标题（摘要/Abstract）
+\begin{abstracten}
+    Abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
+    abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
+    abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
+    abstract abstract abstract.(英文摘要内容必须与中文摘要完全对应。
+    英文摘要采用Times New Roman小四号字书写，毕业论文、毕业设计行与行之间、
+    段落和层次标题以及各段落之间均为1.5倍行距。)
+\end{abstracten}
 
-\begin{abstract}
+\vspace{1cm}
 
-Abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
-abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
-abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
-abstract abstract abstract.(英文摘要内容必须与中文摘要完全对应。
-英文摘要采用Times New Roman小四号字书写，毕业论文、毕业设计行与行之间、
-段落和层次标题以及各段落之间均为1.5倍行距。)
-
-\centering{keywords}
-
-Key words;key words; key words
-(英文关键词内容必须与中文关键词完全对应。英文关键词采用Times New Roman小四号字书写，
-毕业论文、毕业设计行与行之间、段落和层次标题以及各段落之间均为1.5倍行距。
-关键词与关键词之间用“;”隔开)
-\end{abstract}
+\begin{keywordsen}
+    Key words;key words; key words
+    (英文关键词内容必须与中文关键词完全对应。英文关键词采用Times New Roman小四号字书写，
+    毕业论文、毕业设计行与行之间、段落和层次标题以及各段落之间均为1.5倍行距。
+    关键词与关键词之间用“;”隔开)
+\end{keywordsen}
 
 \newpage
 
@@ -71,6 +71,8 @@ Key words;key words; key words
 目录修改时单击目录点右键选择更新域，选择更新整个目录。之后，在“Abstract”的页码后回车加一空行。）
 
 \newpage
+
+\mainmatter %页码设为阿拉伯数字
 
 \section{前言}
 
