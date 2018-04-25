@@ -22,15 +22,15 @@
     
     \begin{center}{ \zihao{2} 四川师范大学本科毕业论文 }
     
-    \vspace{1cm} %手动增加行间距
+    \vspace{2cm} %手动增加行间距
 
     { \zihao{-2} \sicnu@tokens@title }%标题
     
-    \vspace{1cm}
+    \vspace{3cm}
     
-    \end{center}
     
-    { \bf \zihao{-3} %
+    
+    { \bf \zihao{-3} \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{ r c }
         
         学生姓名 & \sicnu@titleitem{ \sicnu@tokens@author } \\
@@ -49,11 +49,13 @@
     \end{tabular}
     }
     
+    \end{center}
+    
 }
 
 \newenvironment{abstractch}{
     \zihao{-2} \begin{center} \bf 摘要 \end{center}
-    %\addcontentsline{toc}{chapter}{abstract}
+    \addcontentsline{toc}{section}{摘要}
     \vspace{0.5cm}
     \zihao{-4}
 }{
@@ -69,7 +71,7 @@
 
 \newenvironment{abstracten}{
     \zihao{-2} \begin{center} \bf Abstract \end{center}
-    %\addcontentsline{toc}{chapter}{abstract}
+    \addcontentsline{toc}{section}{Abstract}
     \vspace{0.5cm}
     \zihao{-4}
 }{
@@ -82,6 +84,15 @@
     \zihao{-4}
 }{
 }
+
+\newcommand\makebibliography[1]{
+    \addcontentsline{toc}{section}{参考文献}
+    \bibliography{ #1 }
+    \bibliographystyle{unsrt}
+}
+
+
+
 
 %伪变量赋值
 
@@ -126,15 +137,18 @@
 
 
 
-\zihao{-4} %设置全局字号
+\zihao{-4} %设置默认全局字号为小四
 \pagestyle{plain} %设置只有下方居中有页码 
 
 %设置页边距
-\usepackage[
+\RequirePackage[
   paper  = letterpaper,
   left   = 1.15in,
   right  = 1.15in,
   top    = 1.0in,
   bottom = 1.0in,
   ]{geometry}
-\usepackage{setspace}
+\RequirePackage{setspace}
+
+\renewcommand{\thefigure}{\thesection.\arabic{figure}} %让图也按章节编号
+\renewcommand{\thetable}{\thesection.\arabic{table}}  %让表按章节编号
